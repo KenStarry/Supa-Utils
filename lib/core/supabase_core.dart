@@ -1,6 +1,6 @@
 part of '../supa_utils.dart';
 
-class SupabaseCore with SupabaseLogin, SupabaseSignUp {
+class SupabaseCore with SupabaseLogin, SupabaseSignUp, SupabaseAdd {
   /// Initialize Supabase
   Future<void> initializeSupabase(
           {required String url, required String anonKey}) async =>

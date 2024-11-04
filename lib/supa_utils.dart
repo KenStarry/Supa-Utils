@@ -3,6 +3,7 @@ library supa_utils;
 import 'dart:js_interop';
 
 import 'package:supa_utils/auth/sign_up.dart';
+import 'package:supa_utils/database/supabase_add.dart';
 import 'package:supa_utils/supa_utils.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'auth/login.dart';
