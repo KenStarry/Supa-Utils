@@ -1,5 +1,5 @@
 part of '../supa_utils.dart';
 
-abstract class SupabaseCore
+abstract class SupaUtils
     with SupabaseLogin, SupabaseSignUp, SupabaseAdd, SupabaseFetch {
 }
