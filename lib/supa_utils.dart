@@ -15,3 +15,4 @@ part 'auth/sign_up.dart';
 /// Database
 part 'database/supabase_add.dart';
 part 'database/supabase_fetch.dart';
+part 'database/supabase_insert.dart';
