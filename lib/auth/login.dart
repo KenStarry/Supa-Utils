@@ -3,6 +3,11 @@ part of '../supa_utils.dart';
 mixin SupabaseLogin {
   final supabase = Supabase.instance.client;
 
+  /// Initialize Supabase
+  Future<void> initializeSupabase(
+      {required String url, required String anonKey}) async =>
+      await Supabase.initialize(url: url, anonKey: anonKey);
+
   /// Sign In User with Email and Password
   Future<AuthResponse> signInWithEmailAndPassword(
       {required String email, required String password}) async {
