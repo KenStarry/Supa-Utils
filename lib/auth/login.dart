@@ -1,10 +1,4 @@
-import 'dart:async';
-
-import 'package:flutter/foundation.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
-
-import 'models/google_sign_in_response_model.dart';
+part of '../supa_utils.dart';
 
 mixin SupabaseLogin {
   final supabase = Supabase.instance.client;

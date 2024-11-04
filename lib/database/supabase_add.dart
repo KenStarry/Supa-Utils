@@ -1,4 +1,4 @@
-import 'package:supabase_flutter/supabase_flutter.dart';
+part of '../supa_utils.dart';
 
 mixin SupabaseAdd {
 
