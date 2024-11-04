@@ -1,7 +1,10 @@
 library supa_utils;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+import 'dart:js_interop';
+
+import 'package:supa_utils/supa_utils.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'auth/login.dart';
+
+/// AUTH
+part 'core/supabase_core.dart';
