@@ -8,7 +8,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'auth/models/google_sign_in_response_model.dart';
 
 /// AUTH
-part 'core/supabase_core.dart';
+part 'core/supa_utils.dart';
 part 'auth/login.dart';
 part 'auth/sign_up.dart';
 
