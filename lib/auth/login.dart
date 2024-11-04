@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -54,6 +55,22 @@ mixin SupabaseLogin {
       } else {
         throw 'Google User is null';
       }
+    } catch (error) {
+      throw Exception(error);
+    }
+  }
+
+  /// Google Sign In on Web, Desktop
+  Future<bool> signInWithGoogleWebAndDesktop({String? redirectLink}) async {
+    try {
+      final bool isSignedIn = await supabase.auth.signInWithOAuth(
+          OAuthProvider.google,
+          redirectTo: kIsWeb ? null : redirectLink,
+          authScreenLaunchMode: kIsWeb
+              ? LaunchMode.platformDefault
+              : LaunchMode.externalApplication);
+
+      return isSignedIn;
     } catch (error) {
       throw Exception(error);
     }
